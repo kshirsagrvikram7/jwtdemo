@@ -1,0 +1,27 @@
+++++++++++++++++++++++++++++++++++++++++++
+API Request and Response:
+++++++++++++++++++++++++++++++++++++++++++
+Signup(POST)
+{
+	"name":"Vikram Kshirsagar",
+	"username":"vikram7",
+	"email":"kshirsagarvikram7@gmail.com",
+	"role":["admin"],
+	"password":"Asdf@1234"
+}
+++++++++++++++++++++++++++++
+Sign In(POST):
+Request:
+{
+	"username":"vikram7",
+	"password":"Asdf@1234"	
+}
+Response:
+{
+   "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWtyYW03IiwiaWF0IjoxNTcyNzc5MDEwLCJleHAiOjE1NzI3NzkwOTZ9.hU6YOUtmERWjQhTRQXJjECpAFyxaDEaF72unDPQU1czts1FtNXtw4-sQqKtQ070Artdf4Bw2rEuIGNYcTFF--w",
+   "tokenType": "Bearer"
+}
++++++++++++++++++++++++++++++
+http://localhost:8081/api/test/admin
+
++++++++++++++++++++++++++++++

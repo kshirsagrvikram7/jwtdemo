@@ -1,0 +1,29 @@
+*********************
+DB structure:
+*********************
+1. Users
+CREATE TABLE users (
+id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(50) NOT NULL,
+name VARCHAR(50) NOT NULL,
+password VARCHAR(100),
+username VARCHAR(50)
+)
+
+
+2. Roles
+CREATE TABLE roles (
+id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL
+)
+
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_PM');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+3. User_roles
+CREATE TABLE user_roles (
+user_id BIGINT(20) NOT NULL,
+role_id BIGINT(20) NOT NULL
+)
+
